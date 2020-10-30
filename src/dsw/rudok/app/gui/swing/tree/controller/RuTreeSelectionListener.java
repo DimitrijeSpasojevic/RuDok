@@ -14,7 +14,7 @@ public class RuTreeSelectionListener implements TreeSelectionListener {
         TreePath path = e.getPath();
         RuTreeItem treeItemSelected = (RuTreeItem)path.getLastPathComponent();
         System.out.println("Selektovan cvor:"+ treeItemSelected.getName());
-        System.out.println("getPath: "+e.getPath());
+        System.out.println("getPath: "+ path);
     }
 }
 

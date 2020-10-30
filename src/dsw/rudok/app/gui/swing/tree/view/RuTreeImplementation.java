@@ -29,4 +29,16 @@ public class RuTreeImplementation implements RuTree {
         ((Workspace) nodeModel).addChild(project);
         SwingUtilities.updateComponentTreeUI(treeView);
     }
+
+    @Override
+    public void deleteProject(Project project) {
+
+    }
+
+    @Override
+    public RuTreeItem getSelectedRuTreeItem() {
+       return null;
+    }
+
+
 }

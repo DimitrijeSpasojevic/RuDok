@@ -10,6 +10,7 @@ public class ActionManager {
     private ExitAction exitAction;
     private NewProjectAction newProjectAction;
     private AboutUsAction aboutus;
+    private DeleteAction deleteAction;
 
     public ActionManager() {
         initialiseActions();
@@ -19,5 +20,6 @@ public class ActionManager {
         exitAction = new ExitAction();
         newProjectAction = new NewProjectAction();
         aboutus = new AboutUsAction();
+        deleteAction = new DeleteAction();
     }
 }
