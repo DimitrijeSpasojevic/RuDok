@@ -10,7 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.util.Random;
 
-public class DeleteAction extends AbstractRudokAction{
+public class DeleteAction extends AbstractRudokAction {
 
     public DeleteAction() {
         putValue(SMALL_ICON, loadIcon("images/delete_icon.png"));
@@ -20,6 +20,11 @@ public class DeleteAction extends AbstractRudokAction{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        //MainFrame.getInstance().getTree().deleteProject();
+        try {
+            MainFrame.getInstance().getTree().deleteProject();
+        }catch (ExceptionForDocker exc){
+            System.out.println("Nije selektovan cvor");
+        }
+
     }
 }

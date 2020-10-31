@@ -20,4 +20,18 @@ public class Workspace extends RuNodeComposite {
             }
         }
     }
+
+    @Override
+    public void deleteChild(RuNode child) {
+        if(child != null && child instanceof Project){
+            Project project = (Project) child;
+            this.getChildren().remove(child);
+        }
+    }
+    public void deleteAllCild(){
+        while(this.getChildren()!=null){
+            getChildren().remove(0);
+        }
+    }
+
 }
